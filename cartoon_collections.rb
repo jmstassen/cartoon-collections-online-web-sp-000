@@ -22,6 +22,8 @@ def find_the_cheese(food)# code an argument here
     cheese_types = ["cheddar", "gouda", "camembert"]
     if cheese_types.include?(item)
       food[index]
+
+    else
     end
   end
 end
