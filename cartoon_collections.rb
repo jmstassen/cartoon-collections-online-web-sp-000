@@ -17,13 +17,11 @@ def long_planeteer_calls(calls)
   end# code an argument here  # Your code here
 end
 
-def find_the_cheese(food)# code an argument here
-  cheese = food.each_with_index do |item, index|
+def find_the_cheese(list)# code an argument here
+  food.each do |food|
     cheese_types = ["cheddar", "gouda", "camembert"]
-    if cheese_types.include?(item)
-      food[index]
-
-    else
+    if cheese_types.include(food)
+      return food
     end
   end
 end
