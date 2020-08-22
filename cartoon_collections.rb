@@ -21,5 +21,6 @@ def find_the_cheese(food)# code an argument here
   food.select do |item|
     cheese_types = ["cheddar", "gouda", "camembert"]
     cheese_types.include?(item)
+    item
   end
 end
