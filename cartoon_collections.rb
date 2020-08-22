@@ -18,9 +18,10 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(food)# code an argument here
-  food.select do |item|
+  cheese = food.each_with_index do |item, index|
     cheese_types = ["cheddar", "gouda", "camembert"]
-    cheese_types.include?(item)
+    if cheese_types.include?(item)
+      food[index]
+    end
   end
-  item
 end
