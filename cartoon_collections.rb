@@ -18,8 +18,16 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(list)# code an argument here
-  list.map do |food|
+  list.select do |food|
+    answer = []
     cheese_types = ["cheddar", "gouda", "camembert"]
-    cheese_types.include?(food)
+    if cheese_types.include?(food)
+      answer << food
+    else
+    end
+    if answer == []
+      return nil
+    else
+    end
   end
 end
